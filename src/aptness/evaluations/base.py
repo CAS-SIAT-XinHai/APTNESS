@@ -102,10 +102,11 @@ class BaseEvaluator(object):
             print("=============================================================")
             conv = item['history'].copy() + [[item['instruction'], item['output']]]
             evaluate_seq_results = Counter()
+            print("---------------------------------------------------------------")
             for turn_num, (msg, rsp) in enumerate(self.complete_conversation(conv)):
-                print("---------------------------------------------------------------")
                 rsp = self.enhance_response(msg, rsp, num_retries)
                 s = self.score(msg, rsp, num_retries=num_retries)
                 evaluate_seq_results.update({k: v / len(conv) for k, v in s.items()})
+                print("---------------------------------------------------------------")
             self.evaluate_results.update({k: v / len(test_data) for k, v in evaluate_seq_results.items()})
         print(self.evaluate_results)
