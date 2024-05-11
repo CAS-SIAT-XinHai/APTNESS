@@ -28,6 +28,6 @@ PYTHONPATH="${WORK_DIR}"/src python "${WORK_DIR}"/evaluate.py --dataset ed --met
   --strategy_name gpt-3.5-turbo-0301 \
   --strategy_api_key sk-1 \
   --strategy_api_base https://api.nbfaka.com/v1 \
-  --evaluator_name gpt4 \
+  --evaluator_name gpt-4 \
   --evaluator_api_key sk-2 \
   --evaluator_api_base https://kkkc.net/v1
