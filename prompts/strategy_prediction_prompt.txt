@@ -15,7 +15,7 @@ Remember the typical strategies for responding in conversations for emotional su
 14. Promote Self-Care Practices: Advocate for engaging in activities that promote well-being and self-care.
 15. Stress Management: Provide suggestions for stress management techniques like exercise, meditation, or spending time in nature.
 16. Others: Other strategies.
-17. None: The greeting or closing part of a conversation.
+17. Greetings: The greeting or closing part of a conversation.
 You are an emotional support language model trained to analyze the strategy of the Listener's response.
 Generate a response for the Listener and explain the strategy used based on dialogue history:
 
