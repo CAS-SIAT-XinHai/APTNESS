@@ -1,0 +1,572 @@
+[
+  {
+      "instruction": "Yeah, maybe kids are just getting smarter with the internet and everything",
+      "input": "",
+      "output": "Yeah maybe that... they are also lazier.",
+      "history": [
+          [
+              "I don't watch a lot of kids movies these days, but they always bring back fond memories",
+              "Same. What are your favorites?"
+          ],
+          [
+              "I've seen the movie Trolls probably 100 times, that and Harry Potter!",
+              "That's funny. I've also seen Trolls about 100 times. My daughter is now sick of it!"
+          ],
+          [
+              "Yeah, sometimes there's more to those movies than you think, like they actually considered how adults would react",
+              "I've noticed a lot of the newer kids movies have adult jokes in them."
+          ]
+      ]
+  },
+  {
+      "instruction": "Yeah, so there wasn't too much of a pressure to work really hard, it wasn't too busy either",
+      "input": "",
+      "output": "Really? I'm surprised the only restaurant in town wasn't busy.",
+      "history": [
+          [
+              "Getting my first job felt like I had a lot more freedom with my life",
+              "Yeah I get that. Where did you work?"
+          ],
+          [
+              "Dairy Queen, it was the only restaurant in my town",
+              "Oh yum. Not a terrible place to work!"
+          ],
+          [
+              "True, most of my friends worked there too so it wasn't too boring.",
+              "Yes , work is better with friends."
+          ]
+      ]
+  },
+  {
+      "instruction": "I'm sure you've done some good work - would it be hard to talk to someone and make your case?",
+      "input": "",
+      "output": "I think I'm just going to move on.",
+      "history": [
+          [
+              "I found out yesterday at work that I'm one of the top performers for my district!  I figured I was doing good, I didn't know I was doing *that* well!",
+              "That's great."
+          ],
+          [
+              "Usually at the end of the day it's never anything nice when my supervisor wants to talk to me but she broke the news and I was surprised!  Been walking on sunshine all weekend!",
+              "Congrats. I want a promotion at my job."
+          ],
+          [
+              "How long have you been there?",
+              "three years."
+          ]
+      ]
+  },
+  {
+      "instruction": "It's easier with a list but still, you always remember the one thing off of the list and then it turns into TEN things off of the list.  XD",
+      "input": "",
+      "output": "You are so right.",
+      "history": [
+          [
+              "So I forgot to get my son a bag of chips from the store today.",
+              "Was he upset?"
+          ],
+          [
+              "He kinda gave me the \"Mom, really?\" look but I told him that we'd ride to the store in the morning b/c I looked around the kitchen and realized there was other stuff I forgot.  *chuckle*",
+              "I hate when that happens. "
+          ],
+          [
+              "I do, too.  I tend to get 'mom brain' at the worst times!  I'll be happy when he is old enough to get his own chips [he's 10 now].",
+              "I hate ggrocery shopping period. Too many decisions"
+          ]
+      ]
+  },
+  {
+      "instruction": "Do you get to see your mom often?",
+      "input": "",
+      "output": "Not very often. She lives about 7 hours away driving time.",
+      "history": [
+          [
+              "When my mom had breast cancer a few years ago. I wanted to do everything I could to be there for her.",
+              "That's terrible to hear. Were you eventually able to be there?"
+          ],
+          [
+              "I was and she was had a full recovery. ",
+              "That's great news. I don't know what I would do if my mom passed."
+          ],
+          [
+              "Me neither, my mom means so much to me. ",
+              "Me too. I'm glad everytihng worked out in the end for you."
+          ]
+      ]
+  },
+  {
+      "instruction": "I'm an administrative assistant for a construction company",
+      "input": "",
+      "output": "Are you in a union?",
+      "history": [
+          [
+              "Having a good job is something to thank",
+              "To thank whom?"
+          ],
+          [
+              "to life God to that higher energy",
+              "Is that who got you the job?"
+          ],
+          [
+              "Nobody ... that's why I'm grateful",
+              "What job do you have?"
+          ]
+      ]
+  },
+  {
+      "instruction": "Oh yes. Anything to keep the eyes open and on the road!",
+      "input": "",
+      "output": "So where did you stop along the way?",
+      "history": [
+          [
+              "Well, what a trip that was. I just drove from Northern California to Florida. I just knew there would be no problems, and I was right.",
+              "Oh wow, what a long trip. How long did it take?"
+          ],
+          [
+              "Six days in all, but I wasn't rushing it. I wanted to see a bit of the country. It was amazing actually.",
+              "That is a long time to be in the car for sure."
+          ],
+          [
+              "It's not so bad really. You get used to it. If you remember to stop and stretch now and again you're ok. And there are some decent rest areas, some with free coffee!",
+              "Oh well that's a plu!"
+          ]
+      ]
+  },
+  {
+      "instruction": "Especially since I was just browsing and a lot of online places have deals better than the ones in store!",
+      "input": "",
+      "output": "plus you can usually get some kind of cash back. I love deals",
+      "history": [
+          [
+              "I fought off hordes of people shopping for school stuff all at the same time and I won!  I got everything on their lists!",
+              "Was it like black friday? lol"
+          ],
+          [
+              "YES.  *chuckle!*  School starts tomorrow here and it was absolutely insane.  The worst part was, usually I go to the store regularly before 10A because there's less people in there and I can just kinda stroll through the aisles.  Oh no, not today.  It was just about elbow to elbow!",
+              "Stick to your routine next time"
+          ],
+          [
+              "I have to grocery shop on Thursday and hopefully the furor will have died down.  But I was in the checkout line and I swore that next year, I'm ordering stuff online and having it all shipped and just keeping my happy self at home!  ",
+              "I hear ya! I am definitely shopping online"
+          ]
+      ]
+  },
+  {
+      "instruction": "I've never done that. Wonder if there's a cheese factory near me. I'm in NC, where the people almost all seem as nice as my kind neighbor!",
+      "input": "",
+      "output": "You should definitely check to see, or stop by Cabot if you ever visit Vermont.",
+      "history": [
+          [
+              "Well, don't you know, one of my neighbors who works for AA was in San Francisco recently and saw some Scottish cheese (I'm Scottish). So she bought some and brought it to me. How nice of her to do that!",
+              "That was nice! What does Scottish cheese taste like?"
+          ],
+          [
+              "This particular one was a cheddar and it tends to be from smaller producers and is creamier and more flavorful than the cheeses we typically get here.",
+              "Cheddar is one of my favorites. I live pretty close to Cabot Creamery and I love their sharp cheddar."
+          ],
+          [
+              "Ooh, I haven't tried Cabot. Must look out for it. The cheddar I normally get is from Tillamook. I think it's from Oregon. Where's Cabot from?",
+              "It's located in a small farming town in Vermont. I went on a tour of their factory once and it was interesting to see the cheese being made."
+          ]
+      ]
+  },
+  {
+      "instruction": "It was, kind of hot but not enough to complain about. ",
+      "input": "",
+      "output": "What sort of food did you eat?",
+      "history": [
+          [
+              "I spent last weekend with most of my family, they live out of state and i don't see them often.",
+              "Did you have a good time visiting with them?"
+          ],
+          [
+              "I did, Yes. Work has been hectic lately so i was really looking forward to unwinding with them. ",
+              "What did you guys do?"
+          ],
+          [
+              "We ate good food, drank wine and went swimming. ",
+              "That sounds fun.  Was the weather nice?"
+          ]
+      ]
+  },
+  {
+      "instruction": "That's a good idea. I might do that. We don't have a camera because we don't normally have any troubles.",
+      "input": "",
+      "output": "It's a good idea to have one just in case. Murders, robberies etc happen even in small/nice towns. Just for your safety ",
+      "history": [
+          [
+              "I had a bad morning when I went to check my mail.",
+              "Oh man...I hate checking the mail..it could be something crappy"
+          ],
+          [
+              "Especially when you find your mailbox laying in about 10 pieces after someone knocked it down last night. ",
+              "Oh god- Do you live in the country?"
+          ],
+          [
+              "Not really. I live in town, but it's a small town.",
+              "Then the person might be caught, do you have a camera? That is really crappy of someone! I have seen people put metal or wood pallets next to their mailboxes because of people doing stuff like this"
+          ]
+      ]
+  },
+  {
+      "instruction": "That's a good idea! ",
+      "input": "",
+      "output": "I bet you all would live it up and have a blast!",
+      "history": [
+          [
+              "I recently went down memory lane was looked at all my high school yearbooks. ",
+              "Oh yeah?  Do you still look awesome like you did back then?"
+          ],
+          [
+              "Well.... maybe not as awesome. lol But I do try to keep in shape. It was good seeing all my old friends. ",
+              "Yeah I bet.  Do you still keep in touch with any of them?"
+          ],
+          [
+              "I do a lot of them but some have moved away and we just lost touch. ",
+              "Yeah.  Maybe you should hit them up on FB for a reunion?"
+          ]
+      ]
+  },
+  {
+      "instruction": "I try to be. it can be difficult on some days, but I think I have a good attitude towards most things",
+      "input": "",
+      "output": "I agree, but having great joy in life helps",
+      "history": [
+          [
+              "I am starting a new phase in my life. Completed all debt and off to a new start",
+              "I can hear the sigh of relief in your voice. I bet your anxious about what the next chapter will be. "
+          ],
+          [
+              "yes very. but I know that it will be good. ",
+              "I can tell your proud of yourself. Im happy for you!"
+          ],
+          [
+              "Thanks! I hope to learn from my mistake and continue to progress",
+              "You will be fine! Stay optimistic about it"
+          ]
+      ]
+  },
+  {
+      "instruction": "Perhaps I'll try classical music next time - that might totally shut them up, lol.",
+      "input": "",
+      "output": "bwahaha not to mention it will help you get some relaxing sleep.",
+      "history": [
+          [
+              "Ok, so the people upstairs were making a terrible noise last night and I'd had enough. I put jazz on quite loudly and went to bed. I really shouldn't have done that!",
+              "oh no what happened?"
+          ],
+          [
+              "Well, they were shouting and stomping around, so I lost it! This morning, they've been quiet as church mice, so I guess it worked :)",
+              "that would really help if it was a permanent solution"
+          ],
+          [
+              "Yeah, I really do feel bad, but it's been going on for over a year.",
+              "yeah enough is enough. i totally can't say i blame you."
+          ]
+      ]
+  },
+  {
+      "instruction": "What I love about this store is it sources all of its produce locally and its all organic. So you get some strange, different things to try!",
+      "input": "",
+      "output": "It sounds amazing! Are the prices good?",
+      "history": [
+          [
+              "I just enjoyed grocery shopping for the first time in a very long time. I've found my perfect restaurant/store and spent a very happy 40 mins or so wandering around it.",
+              "That's great! Did you get anything you are especially excited about? It's a restaurant and a store?"
+          ],
+          [
+              "Yes, it's both. I got a chickpea curry with basmati rice that a local Indian lady made. And a bag of dragon tongue beans, which are delicious!",
+              "Dragon tongue beans! I've never heard of them! What do they look like?"
+          ],
+          [
+              "They're the same shape as regular green beans, but lighter in color and they have red streaks through them. You treat them as you would green beans.",
+              "I will have to look for those. We have a huge variety of foods where I live, but this is new to me. "
+          ]
+      ]
+  },
+  {
+      "instruction": "The North is my favorite area - north of San Francisco. Where did you go?",
+      "input": "",
+      "output": "My sister got married at Laguna niguel",
+      "history": [
+          [
+              "I recently moved from California to North Carolina and suddenly realized I knew absolutely nobody. It was a horrible feeling.",
+              "That sucks. Why did you move from california?"
+          ],
+          [
+              "My rent tripled in three years. I couldn't afford to stay - just too expensive. Anyway, a friend had driven across with me and it wasn't until he'd gone that I realized I was alone. Silly, huh?!",
+              "That's really common actually. There's a big exodus from there.  They voted for high taxes and now people are abandoning the state beacuse the cost of living is too high."
+          ],
+          [
+              "The two things I found that were really bad were rents and gas. Everything else was pretty much the same as other places I've lived. So sad - where I lived was lovely.",
+              "The weather is nice in parts of california, I've been there."
+          ]
+      ]
+  },
+  {
+      "instruction": "That's wonderful, that you were able to take her in. Good for you! More people should act like that.",
+      "input": "",
+      "output": "She's been a great dog. I've got no complaints or regrets.",
+      "history": [
+          [
+              "My neighbor used to have an old beagle - a lovely pooch. He died of cancer just before Thanksgiving. I looked for him for weeks - I miss him.",
+              "That's so sad.  I've lost dogs before.  I know how you feel :("
+          ],
+          [
+              "Yeah. I used to see him when I was out on my porch and he'd come out for a sniff around or a tinkle. He was so sweet and gentle.",
+              "Yeah dogs are man's best friend."
+          ],
+          [
+              "They sure are. I actually prefer them to some humans I know! Do you have a dog at the moment?",
+              "Yes I've got one.  She's a stray that showed up to work one day."
+          ]
+      ]
+  },
+  {
+      "instruction": "Getting a new apartment soon. At least the new neighbors will hopefully be at work during the day.",
+      "input": "",
+      "output": "Oh, good. I'm sure it will be an improvement from your current situation.",
+      "history": [
+          [
+              "I had the most wonderful week recently. My neighbors weren't here and I could do whatever I wanted without them stomping on my head!",
+              "That sounds like a relief."
+          ],
+          [
+              "It was. I can't even brush my teeth at 8am without one or the other of them thumping around upstairs.",
+              "It seems like it's a lot of ruckus, I've visited friends who have your situation and I can only imagine. "
+          ],
+          [
+              "That blessed week was so peaceful and calming. Everything felt right in my world. Then they came back!",
+              "Glad you enjoyed that short period of peace. Maybe soon you will get new neighbors or you can get a better place."
+          ]
+      ]
+  },
+  {
+      "instruction": "Cant wait to see what he can do,  Its exciting too!  ",
+      "input": "",
+      "output": "it's very exciting. i wish you both all the best.",
+      "history": [
+          [
+              "My eldest son is off and is starting his first year in college.  Im so nervous for him!",
+              "don't be. i'm sure you raised him right. he will be starting his new adventure"
+          ],
+          [
+              "I think it's more stressful for me than it is for him!  I just want the best for him, just not used to not being there with him.",
+              "i'm sure he's cool as a cucumber while you are a nervous wreck. it will be fine."
+          ],
+          [
+              "Thanks!  I m sure it will be to just have to get over it and let him grow up.  Gotta lose the control freak in me at some point right?",
+              "it will be find. have a little fiath in him and you will see"
+          ]
+      ]
+  },
+  {
+      "instruction": "Yes. I've been here for about 20 years now and love it. But there's something about where I grew up which pulls (or rather pulled) me back.",
+      "input": "",
+      "output": "Yes it sounds like it was a great place to grow up.",
+      "history": [
+          [
+              "My cousin recently sent me a video from her phone of my home village. What I saw made me mad and sad!",
+              "Where is your home village?"
+          ],
+          [
+              "In the North of Scotland. It used to be a quiet little place, and now there are hideous buildings in really prominent places!",
+              "That's a shame. I\"m sorry to hear that."
+          ],
+          [
+              "Me to. I was even considering moving back there some day, but not after seeing the mess the planners have made of it.",
+              "Do you live in the United States now?"
+          ]
+      ]
+  },
+  {
+      "instruction": "I've called management twice about it and both times he quietened down - for about two days. Then up it goes again!",
+      "input": "",
+      "output": "How many times do you need to tell them!? :(",
+      "history": [
+          [
+              "One of my neighbors (next building and two floors up) plays talk radio every morning Very Loudly.",
+              "Urgh that sounds like the worst! How early?"
+          ],
+          [
+              "Not until about 8am, but it's so loud I can hear it in my first floor apartment with the doors and windows closed. Idiot man!",
+              "So inconsiderate! It reminds me of my neighbours doing building work one morning at 6AM!"
+          ],
+          [
+              "Yikes! Why are some people such inconsiderate creeps? It makes me really mad!",
+              "Me too! "
+          ]
+      ]
+  },
+  {
+      "instruction": "We should have a lot of fun this summer with it! Makes up for all the hard work saving up for it. ",
+      "input": "",
+      "output": "I hope you do! It makes you feel like you've actually earned it!",
+      "history": [
+          [
+              "I bought a 20 foot boat. I believe it will be able to handle the large lake that I will be taking it on.",
+              "Wow! A 20 foot boat, that must be amazing to take out on the lake! How much did it cost you?"
+          ],
+          [
+              "It cost me around $30,000. It has all the latest features, that should keep me safe in all but the most extreme conditions. ",
+              "Id love to own a boat, are you using it for leisure or fishing etc? "
+          ],
+          [
+              "It has been a dream of mine for a long time. I am mainly going to use it for fishing. But might have to take my wife tubing to make her happy. ",
+              "They both sound like great plans! Tubing would be a great way to keep her happy while you fish haha!"
+          ]
+      ]
+  },
+  {
+      "instruction": "How can I complain when she gets up early to make me such a great meal!",
+      "input": "",
+      "output": "I bet she is a great cook!",
+      "history": [
+          [
+              "My wife made me pancakes for breakfast. I have a full belly and feel rather happy now. ",
+              "Yum!!! I love pancakes. Is it your favorite food too?"
+          ],
+          [
+              "One of my favorite breakfast foods. She also made some thick sliced bacon. She treats me so well.",
+              "That is great you have a sweet wife! "
+          ],
+          [
+              "For sure, no other woman I would rather have. ",
+              "It is so great to hear about a happy couple :)"
+          ]
+      ]
+  },
+  {
+      "instruction": "Yeah, or I could buy more scratch offs at the gas station and hit it big. ",
+      "input": "",
+      "output": "LOL, well there is always luck!",
+      "history": [
+          [
+              "I saw my neighbor bought the car I have always wanted. I wish I was in a a better financial position to buy one.",
+              "What kind of car is it? "
+          ],
+          [
+              "Subaru Brat, best car ever made. Its like a car and a t ruck all in one. ",
+              "ooh nice! just start to SAVE, SAVE,SAVE where ever you can and you will get there."
+          ],
+          [
+              "I know, it would look perfect in front of my double wide mobile home! There is a used one on the corner for $350. But that will take me months to save up. ",
+              "Time goes by so fast. You'll see. "
+          ]
+      ]
+  },
+  {
+      "instruction": "And in my opinion, the bond for those people was nowhere near high enough - they should have had to stay in jail!",
+      "input": "",
+      "output": "They should- they say people who hurt animals will hurt people too. ",
+      "history": [
+          [
+              "They arrested 9 people at a nearby farm for animal cruelty and they are already out of jail on bond!",
+              "Oh, that's not right. I have a rescue dog, she had a litter of puppies at a puppy mill before she was a year. "
+          ],
+          [
+              "Wow!  It makes me sad how people can be so cruel to animals that don't have the ability to fight back.  The rescue shelters here have been working overtime to get things straightened out at that farm.",
+              "I could chat with you all day! We have a lot in common- I feel the same way. Keep chatting? Poor rescue animals. "
+          ],
+          [
+              "Yeah.  But I'm glad at least here we have enough agencies [and people volunteering their time] that hopefully, those animals can find good care and good homes.",
+              "That's great! So sad for those poor animals. "
+          ]
+      ]
+  },
+  {
+      "instruction": "She is pretty good for an eleven year old, better than I was.",
+      "input": "",
+      "output": "haha same here!  ",
+      "history": [
+          [
+              "I enjoy visiting the nursing home on occasion.",
+              "Oh yeah?  Do you know someone that lives there?"
+          ],
+          [
+              "Not really, I take my daughter to see them, so many of them have no visitors at all.",
+              "Yeah.  That's awesome that you do that though.  Makes for some special moments with your daughter and teaches her stuff."
+          ],
+          [
+              "She likes to bake, so we take them what she makes :)",
+              "That sounds cool!  I bet she cooks good!"
+          ]
+      ]
+  },
+  {
+      "instruction": "I believe you are right! My family are going to go nuts when they see what they've got to deal with, lol.",
+      "input": "",
+      "output": "Lol. Me too!!",
+      "history": [
+          [
+              "I found some old Christmas cards the other day and had a lovely time reading them and reminiscing about the people who sent them.",
+              "That must have been nice. I keep cards too."
+          ],
+          [
+              "It was so nice. I'm terrible about throwing cards out. I feel, if someone's taken the time to write, I should preserve it. Does that sound silly?",
+              "Of course not. There is so much paper in this house. I keep cards, photos, school projects. Everything. We arent here forever"
+          ],
+          [
+              "That's very true. My Dad kept everything too. When he passed we had quite a task sorting through things. I think my brother's still at it!",
+              "I found lots of things to pass down when my grandmother passed. I think they passed down their hoarding to us lol"
+          ]
+      ]
+  },
+  {
+      "instruction": "I do what I can where I can.  Can't wait for our hard work to pay off and she gets her license!",
+      "input": "",
+      "output": "It will definitely paid off and I am rooting for her.",
+      "history": [
+          [
+              "I'm teaching my daughter how to drive, and so far, so good!",
+              "That is wonderful, I imagine she is very excited."
+          ],
+          [
+              "She is!  At first, though, she was very nervous.  I told her we could start off slow - her dad lives 1 mile from me down a quiet road, so we started driving back and forth between the two houses.",
+              "Okay i see well, take your time she will be getting her liscense soon"
+          ],
+          [
+              "Hopefully by the first of the year.  We've worked up to driving to the dollar store 5 miles away.  She's still a little nervous but she's getting better and more confident the more we practice.",
+              "She just needs to get her confidence and I am sure you are a great teacher."
+          ]
+      ]
+  },
+  {
+      "instruction": "DDon't be! There are many, many types of relationships and I don't think ours is necessarily typical. It's just the way it is :)s of relationships and I don't think ours is necessarily typical. It's just the way it is :)",
+      "input": "",
+      "output": "I will work on it with my family. ",
+      "history": [
+          [
+              "My brother and I recently had to sell a house and he dealt with everything. I'm so lucky to have a brother I can rely on and who I know won't try and con me.",
+              "Thats neat. Do you guys make a lot of money?"
+          ],
+          [
+              "We did and he was so precise with who got what and made sure he sent me my share quickly. He's such a neat brother in so many regards. I always know he'll be there for anyone who needs help.",
+              "I wish my siblings were like that. We should be more supportive and close like that"
+          ],
+          [
+              "We weren't always close. When we were kids we were always fighting. It wasn't until we got older that we got closer. We're best of friends now.",
+              "I am jealous lol"
+          ]
+      ]
+  },
+  {
+      "instruction": "She was as fit as a flea too. She tripped and broke her hip and got a bad infection in the hospital. That's what she died of!",
+      "input": "",
+      "output": "Wow. She probably couldve kept going for years if it wasnt for that.",
+      "history": [
+          [
+              "I was over here in the US when my Grandma passed in Scotland. I was so upset - nobody could get hold of me to tell me and her funeral was over before I knew about it.",
+              "Thats sad. Have you been to Scotand since?"
+          ],
+          [
+              "Only for funerals, unfortunately. Both my parents have since died. Unpleasant fact of life, I'm afraid.",
+              "Im sorry to hear that. Were you born there?"
+          ],
+          [
+              "Yes I was. I didn't come to the US until I was in my 30s. Didn't expect my Grandma to pass the minute I got here, but she was 96, so it shouldn't have been such a surprise!",
+              "96! Wow. Thats a full life!"
+          ]
+      ]
+  }
+]

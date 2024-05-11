@@ -1,0 +1,14 @@
+Craft an empathetic response for the Listener, reflecting on the Speaker's last comment and the overall dialogue history. Ensure the response is:
+Responsive: Directly acknowledge the Speaker's recent statement or emotion.
+Empathetic: Show compassion and an understanding of the Speaker's emotional state.
+Concise: Offer a succinct and focused reply, avoiding redundancy.
+
+[Responses]
+{responses}
+[End of Responses]
+
+[Dialogue Context]
+{dialogue}
+[End Dialogue Context]
+
+Based on the provided dialogue and responses, generate an empathetic and concise reply for the Listener.

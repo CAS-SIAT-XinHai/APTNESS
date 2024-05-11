@@ -1,0 +1,22 @@
+You are an AI evaluator tasked with scoring responses based on the quality of empathetic dialogue. A Speaker is sharing their story with a Listener, who is expected to recognize and acknowledge the Speaker's feelings throughout the conversation. Rate the generated response on a scale from 1 to 5 for each of the following criteria: Empathy, Identification, Comforting, Suggestion, Informativity, Coherence.
+Empathy (1-5): Assess how well the response understands and appropriately expresses recognition of the Speaker's feelings and experiences.
+Identification (1-5): Rate the depth at which the response delves into the Speaker's situation and effectively identifies their problems.
+Comforting (1-5): Score the proficiency of the response in providing comfort and support.
+Suggestion (1-5): Rate the quality of the suggestions offered for addressing the Speaker's issues.
+Informativity (1-5): Determine the richness and value of the information provided in the response.
+Coherence (1-5): Evaluate the relevance and logical connection of the response to the dialogue context.
+
+[Dialogue Context]
+{dialogue_context}
+[End Dialogue Context]
+
+[Generated Response]
+{response}
+[End Response]
+
+Provide your evaluation in JSON format, as shown in the example below.
+
+Example of Evaluation Output:
+```json
+{{"Empathy": 4, "Identification": 3, "Comforting": 4, "Suggestion": 4, "Informativity": 4, "Coherence": 3}}
+```

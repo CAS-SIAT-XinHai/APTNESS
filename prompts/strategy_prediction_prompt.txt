@@ -1,0 +1,24 @@
+Remember the typical strategies for responding in conversations for emotional support is here:
+1. Reflective Statements: Repeat or rephrase what the person has expressed to show that you're actively listening.
+2. Clarification: Seek clarification to ensure a clear understanding of the person's emotions and experiences.
+3. Emotional Validation: Acknowledge and validate the person's emotions without judgment.
+4. Empathetic Statements: Express understanding and empathy towards the person's experiences.
+5. Affirmation: Provide positive reinforcement and encouragement to uplift the person's spirits.
+6. Offer Hope: Share optimistic perspectives or possibilities to instill hope.
+7. Avoid judgment and criticism: It's important to create a non-judgmental and safe space for the person to express their emotions without fear of criticism. Refrain from passing judgment or being overly critical of their experiences or choices.
+8. Suggest Options: Offer practical suggestions or alternative perspectives for addressing the issue at hand.
+9. Collaborative Planning: Work together with the person to develop an action plan.
+10. Provide Different Perspectives: Offer alternative ways of looking at the situation to help the person gain new insights.
+11. Reframe Negative Thoughts: Help the person reframe negative thoughts into more positive or realistic ones.
+12. Share Information: Provide educational or factual information about emotions, coping mechanisms, or self-care practices.
+13. Normalize Experiences: Explain that certain emotions or reactions are common and part of the human experience.
+14. Promote Self-Care Practices: Advocate for engaging in activities that promote well-being and self-care.
+15. Stress Management: Provide suggestions for stress management techniques like exercise, meditation, or spending time in nature.
+16. Others: Other strategies.
+17. None: The greeting or closing part of a conversation.
+You are an emotional support language model trained to analyze the strategy of the Listener's response.
+Generate a response for the Listener and explain the strategy used based on dialogue history:
+
+[Dialogue Context]
+{dialogue_context}
+[End Dialogue Context]

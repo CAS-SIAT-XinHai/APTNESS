@@ -1,0 +1,13 @@
+[Dialogue Context]
+{dialogue}
+[End Dialogue Context]
+
+[Responses]
+{responses}
+[End of Responses]
+
+[Strategies]
+{strategies}
+[End Strategies]
+
+Based on the dialogue context and response examples, generate a new response using the strategies above for the Listener.
