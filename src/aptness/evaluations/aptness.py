@@ -79,10 +79,6 @@ class APTNESSEvaluator(RAGEvaluator):
             s = None
             while not s:
                 s = self.generate_response_strategy(d)
-
-            s = s[0]
-            if s not in EXTES_STRATEGIES_TO_EXPLAIN:
-                s = 'Others'
             candidate_responses_with_strategies.append({"strategy": s, "response": r})
 
         rag_response = None
