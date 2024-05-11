@@ -1,5 +1,6 @@
 import re
 
+from more_itertools import flatten
 from openai import OpenAI
 
 from .rag import RAGEvaluator
@@ -55,7 +56,7 @@ class APTNESSEvaluator(RAGEvaluator):
                                enumerate(strategy_retrieve_responses)])
         strategies = "\n".join(
             [f"[Strategy {i}]\n{st}: {EXTES_STRATEGIES_TO_EXPLAIN[st]}\n[End of Strategy {i}]\n" for i, st in
-             enumerate(set([cr['strategy'] for cr in strategy_retrieve_responses]))])
+             enumerate(set(flatten([cr['strategy'] for cr in strategy_retrieve_responses])))])
 
         messages = [
             {
