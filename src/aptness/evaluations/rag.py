@@ -109,4 +109,4 @@ class RAGEvaluator(BaseEvaluator):
             rag_response = self.generate_rag_response(dialogue, candidate_responses, num_retries)
 
         # 增加去噪功能
-        return rag_response
+        return rag_response.strip()

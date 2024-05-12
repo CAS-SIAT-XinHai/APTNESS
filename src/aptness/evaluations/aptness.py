@@ -93,4 +93,4 @@ class APTNESSEvaluator(RAGEvaluator):
                                                                       num_retries)
 
         # 增加去噪功能
-        return self.retrieve_augment_re(rag_response)
+        return rag_response.strip()

@@ -41,7 +41,7 @@ class BaseEvaluator(object):
             )
             print("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<")
             print(f"Get response from {model}: {chat_response.choices[0].message.content}")
-            return chat_response.choices[0].message.content
+            return chat_response.choices[0].message.content.strip()
         except OpenAIError as e:
             # Handle all OpenAI API errors
             print("*****************************************")
@@ -95,7 +95,7 @@ class BaseEvaluator(object):
             num_retries -= 1
 
     def enhance_response(self, dialogue, response, num_retries=5):
-        return response
+        return response.strip()
 
     def run(self, test_data, num_retries=5):
         for item in test_data:
