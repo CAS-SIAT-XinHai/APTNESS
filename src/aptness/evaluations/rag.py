@@ -62,16 +62,14 @@ class RAGEvaluator(BaseEvaluator):
 
     @staticmethod
     def retrieve_augment_re(retrieve_augment_response):
-        result = re.search(r':\s*(.*)', retrieve_augment_response)
-        if result:
-            retrieve_augment_response = result.group(1)
-            retrieve_augment_response = retrieve_augment_response.replace('"', '')
-        retrieve_augment_response = re.sub(r'\b(?:Of course).*?[.!?]', '', retrieve_augment_response,
-                                           flags=re.IGNORECASE)
+        retrieve_augment_response = re.sub(r'.*?:\s*', '', retrieve_augment_response)
+        retrieve_augment_response = retrieve_augment_response.replace('"','')
+        retrieve_augment_response = re.sub(r'\b(?:Of course).*?[.!?]', '', retrieve_augment_response, flags=re.IGNORECASE)
         retrieve_augment_response = re.sub(r'\b(?:Sure).*?[.!?]', '', retrieve_augment_response, flags=re.IGNORECASE)
-        retrieve_augment_response = retrieve_augment_response.replace('As the listener,', '')
-        retrieve_augment_response = retrieve_augment_response.replace('Listener:', '')
+        retrieve_augment_response = retrieve_augment_response.replace('As the listener,','')
+        retrieve_augment_response = retrieve_augment_response.replace('Listener:','')
         retrieve_augment_response = retrieve_augment_response.strip()
+        
         return retrieve_augment_response
 
     def generate_rag_response(self, dialogue_context, candidate_responses, num_retries=5):
