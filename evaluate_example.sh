@@ -7,6 +7,7 @@ PID=$BASHPID
 echo "$PID"
 
 METHOD=$1
+DATASET=$2
 #BACKEND_PORT=$2
 #FRONTEND_PORT=$3
 #
@@ -20,7 +21,7 @@ mkdir -p "${OUTPUT_DIR}"
 log_file="${OUTPUT_DIR}"/logs.txt
 exec &> >(tee -a "$log_file")
 
-PYTHONPATH="${WORK_DIR}"/src python "${WORK_DIR}"/evaluate.py --dataset ed --method "${METHOD}" \
+PYTHONPATH="${WORK_DIR}"/src python "${WORK_DIR}"/evaluate.py --dataset "${DATASET}" --method "${METHOD}" \
   --data_dir "${WORK_DIR}"/data --prompts_dir "${WORK_DIR}"/prompts \
   --model_name gpt-3.5-turbo-0301 \
   --model_api_key sk-1 \
