@@ -2,6 +2,7 @@ import json
 import re
 from collections import Counter
 
+import tqdm
 from openai import OpenAI, OpenAIError
 
 
@@ -98,7 +99,7 @@ class BaseEvaluator(object):
         return response.strip()
 
     def run(self, test_data, num_retries=5):
-        for item in test_data:
+        for item in tqdm.tqdm(test_data):
             print("=============================================================")
             conv = item['history'].copy() + [[item['instruction'], item['output']]]
             evaluate_seq_results = Counter()
