@@ -68,9 +68,13 @@ class APTNESSEvaluator(RAGEvaluator):
         ]
 
         while num_retries:
-            chat_response = self.chat_completion(self.strategy_client, model=self.model_name, messages=messages)
+            chat_response = self.chat_completion(self.model_client, model=self.model_name, messages=messages)
             if chat_response:
-                return chat_response
+                rr = self.rag_response_pattern.findall(chat_response)
+                if rr:
+                    return rr[0]
+
+            print(f"Error try from {self.strategy_name}: {num_retries}")
             num_retries -= 1
 
     def enhance_response(self, dialogue, response, num_retries=5):

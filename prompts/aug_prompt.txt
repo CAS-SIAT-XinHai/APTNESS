@@ -9,6 +9,8 @@ Concise: Offer a succinct and focused reply, avoiding redundancy.
 
 [Dialogue Context]
 {dialogue}
-[End Dialogue Context]
+[End of Dialogue Context]
 
 Based on the provided dialogue and responses, generate an empathetic and concise reply for the Listener.
+
+The generated response should be enclosed by [Response] and [End of Response].

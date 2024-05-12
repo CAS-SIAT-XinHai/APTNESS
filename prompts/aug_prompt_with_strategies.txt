@@ -8,6 +8,8 @@
 
 [Strategies]
 {strategies}
-[End Strategies]
+[End of Strategies]
 
 Based on the dialogue context and response examples, generate a new response using the strategies above for the Listener.
+
+The generated response should be enclosed by [Response] and [End of Response].

@@ -40,6 +40,7 @@ class RAGEvaluator(BaseEvaluator):
                     flatten([["Speaker: {}".format(s), "Listener: {}".format(l)] for s, l in
                              retrieve_conv[:i]])) + ["Speaker: {}".format(speaker)]
 
+        print("Loading index start: ")
         # nomic embedding model
         Settings.embed_model = OllamaEmbedding(model_name="nomic-embed-text")
         Settings.llm = None
@@ -57,8 +58,10 @@ class RAGEvaluator(BaseEvaluator):
             index.storage_context.persist(persist_dir=storage_dir)
 
         self.retriever = index.as_retriever(similarity_top_k=2)
+        print("Loading index end!")
 
         self.aug_prompt = open(f"{prompts_dir}/aug_prompt.txt").read()
+        self.rag_response_pattern = re.compile(r"\[Response]([\s\S]+)\[End of Response]")
 
     @staticmethod
     def retrieve_augment_re(retrieve_augment_response):
@@ -90,16 +93,22 @@ class RAGEvaluator(BaseEvaluator):
         while num_retries:
             chat_response = self.chat_completion(self.model_client, model=self.model_name, messages=messages)
             if chat_response:
-                return chat_response
+                rr = self.rag_response_pattern.findall(chat_response)
+                if rr:
+                    return rr[0]
+
+            print(f"Error try from {self.model_name}: {num_retries}")
             num_retries -= 1
 
     def enhance_response(self, dialogue, response, num_retries=5):
-        retrieved_responses = self.retriever.retrieve(response)
+        retrieved_responses = [r.text for r in self.retriever.retrieve(response)]
+        print("Retrieved responses:", retrieved_responses)
 
-        candidate_responses = [response] + [r.text for r in retrieved_responses]
+        candidate_responses = [response] + retrieved_responses
+
         rag_response = None
         while not rag_response:
             rag_response = self.generate_rag_response(dialogue, candidate_responses, num_retries)
 
         # 增加去噪功能
-        return self.retrieve_augment_re(rag_response)
+        return rag_response
