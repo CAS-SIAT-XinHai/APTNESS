@@ -4,7 +4,7 @@ from more_itertools import flatten
 from openai import OpenAI
 
 from .rag import RAGEvaluator
-from ..strategies.extes import EXTESStrategies, EXTES_STRATEGIES_TO_EXPLAIN
+from ..strategies import STRATEGIES
 
 
 class APTNESSEvaluator(RAGEvaluator):
@@ -19,6 +19,7 @@ class APTNESSEvaluator(RAGEvaluator):
                  evaluator_name,
                  evaluator_api_key,
                  evaluator_api_base,
+                 strategy,
                  data_dir,
                  prompts_dir):
         super().__init__(model_name, model_api_key, model_api_base,
@@ -28,6 +29,7 @@ class APTNESSEvaluator(RAGEvaluator):
             api_key=strategy_api_key,
             base_url=strategy_api_base,
         )
+        self.strategies = STRATEGIES[strategy]
 
         self.strategy_prediction_prompt = open(f"{prompts_dir}/strategy_prediction_prompt.txt").read()
         self.aug_prompt_with_strategies = open(f"{prompts_dir}/aug_prompt_with_strategies.txt").read()
@@ -41,7 +43,7 @@ class APTNESSEvaluator(RAGEvaluator):
             }
         ]
 
-        strategies = "|".join(map(lambda item: item.value, EXTESStrategies))
+        strategies = "|".join(self.strategies.keys())
 
         while num_retries:
             chat_response = self.chat_completion(self.strategy_client, model=self.strategy_name, messages=messages)
@@ -55,7 +57,7 @@ class APTNESSEvaluator(RAGEvaluator):
         responses = "\n".join([f"[Response {i}]\n{cr['response']}\n[End of Response {i}]\n" for i, cr in
                                enumerate(strategy_retrieve_responses)])
         strategies = "\n".join(
-            [f"[Strategy {i}]\n{st}: {EXTES_STRATEGIES_TO_EXPLAIN[st]}\n[End of Strategy {i}]\n" for i, st in
+            [f"[Strategy {i}]\n{st}: {self.strategies[st]}\n[End of Strategy {i}]\n" for i, st in
              enumerate(set(flatten([cr['strategy'] for cr in strategy_retrieve_responses])))])
 
         messages = [

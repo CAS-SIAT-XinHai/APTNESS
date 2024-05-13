@@ -1,7 +1,6 @@
 import argparse
 import json
 
-from aptness.evaluations.aptness_esconv import APTNESSEvaluator_esconv
 from aptness.evaluations.aptness import APTNESSEvaluator
 from aptness.evaluations.base import BaseEvaluator
 from aptness.evaluations.rag import RAGEvaluator
@@ -15,6 +14,9 @@ if __name__ == "__main__":
                         help="data directory")
     parser.add_argument("-pd", "--prompts_dir", default="prompts", type=str,
                         help="prompts directory")
+    strategies = ['esconv', 'extes']
+    parser.add_argument("-s", "--strategy", default="extes", type=str,
+                        help="one of: {}".format(", ".join(sorted(datasets))))
     methods = ['baseline', 'rag', 'aptness']
     parser.add_argument("-m", "--method", default="data", type=str,
                         help="Methods used for generation.")
@@ -71,20 +73,7 @@ if __name__ == "__main__":
             evaluator_name=args.evaluator_name,
             evaluator_api_key=args.evaluator_api_key,
             evaluator_api_base=args.evaluator_api_base,
-            data_dir=args.data_dir,
-            prompts_dir=args.prompts_dir,
-        )
-    elif args.method == 'aptness_esconv':
-        evaluator = APTNESSEvaluator_esconv(
-            model_name=args.model_name,
-            model_api_key=args.model_api_key,
-            model_api_base=args.model_api_base,
-            strategy_name=args.strategy_name,
-            strategy_api_key=args.strategy_api_key,
-            strategy_api_base=args.strategy_api_base,
-            evaluator_name=args.evaluator_name,
-            evaluator_api_key=args.evaluator_api_key,
-            evaluator_api_base=args.evaluator_api_base,
+            strategy=args.strategy,
             data_dir=args.data_dir,
             prompts_dir=args.prompts_dir,
         )
