@@ -3,7 +3,7 @@ from enum import Enum
 
 class ESConvStrategies(str, Enum):
     QUESTION = 'Question'
-    OTHERS = 'Others'
+    GREETINGS = 'Greetings'
     INFORMATION = "Information"
     RESTATEMENT_OR_PARAPHRASING = 'Restatement or Paraphrasing'
     PROVIDING_SUGGESTIONS = 'Providing Suggestions'
