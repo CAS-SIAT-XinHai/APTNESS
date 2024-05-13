@@ -31,7 +31,7 @@ class APTNESSEvaluator(RAGEvaluator):
         )
         self.strategies = STRATEGIES[strategy]
 
-        self.strategy_prediction_prompt = open(f"{prompts_dir}/strategy_prediction_prompt.txt").read()
+        self.strategy_prediction_prompt = open(f"{prompts_dir}/strategy_prediction_prompt_{strategy}.txt").read()
         self.aug_prompt_with_strategies = open(f"{prompts_dir}/aug_prompt_with_strategies.txt").read()
 
     def generate_response_strategy(self, dialogue, num_retries=5):
