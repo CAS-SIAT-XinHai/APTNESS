@@ -21,4 +21,4 @@ ESCONV_STRATEGIES_TO_EXPLAIN = {
     "Providing Suggestions": "Provide suggestions about how to change, but be careful to not overstep and tell them what to do.",
     "Information": "Provide useful information to the help-seeker, for example with data, facts, opinions, resources, or by answering questions.",
     "Greetings": "Exchange pleasantries and use other support strategies that do not fall into the above categories.",
-    }
+}
