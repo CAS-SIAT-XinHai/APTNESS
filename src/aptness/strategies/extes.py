@@ -1,16 +1,15 @@
-import dataclasses
 from enum import Enum
 
 extes_strategy = ['Reflective Statements', 'Clarification', 'Emotional Validation', 'Empathetic Statements',
                   'Affirmation', 'Offer Hope', 'Avoid judgment and criticism', 'Suggest Options',
                   'Collaborative Planning', 'Provide Different Perspectives', 'Reframe Negative Thoughts',
                   'Share Information', 'Normalize Experiences', 'Promote Self-Care Practices', 'Stress Management',
-                  'Others', 'None']
+                  'Others', 'Greetings']
 
 
 def strategy_name(strategy):
     if strategy == '':
-        strategy = 'None'
+        strategy = 'Greetings'
     if 'Validation' in strategy or 'Validate' in strategy:
         strategy = 'Emotional Validation'
     if 'Information' in strategy:
