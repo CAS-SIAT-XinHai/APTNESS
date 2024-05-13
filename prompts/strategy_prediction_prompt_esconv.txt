@@ -6,7 +6,7 @@ Remember the typical strategies for responding in conversations for emotional su
 5. Affirmation and Reassurance: Affirm the helpseeker’s strengths, motivation, and capabilities and provide reassurance and encouragement.
 6. Providing Suggestions: Provide suggestions about how to change, but be careful to not overstep and tell them what to do.
 7. Information: Provide useful information to the help-seeker, for example with data, facts, opinions, resources, or by answering questions.
-8. Others: Exchange pleasantries and use other support strategies that do not fall into the above categories.
+8. Greetings: Exchange pleasantries and use other support strategies that do not fall into the above categories.
 You are an emotional support language model trained to analyze the strategy of the Listener's response.  Your task is to give the Listener's response and judge the strategy of the Listener's response based on dialogue history:
 
 [Dialogue Context]
