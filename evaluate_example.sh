@@ -7,7 +7,6 @@ PID=$BASHPID
 echo "$PID"
 
 METHOD=$1
-DATASET=$2
 #BACKEND_PORT=$2
 #FRONTEND_PORT=$3
 #
@@ -21,14 +20,14 @@ mkdir -p "${OUTPUT_DIR}"
 log_file="${OUTPUT_DIR}"/logs.txt
 exec &> >(tee -a "$log_file")
 
-PYTHONPATH="${WORK_DIR}"/src python "${WORK_DIR}"/evaluate.py --dataset "${DATASET}" --method "${METHOD}" \
+PYTHONPATH="${WORK_DIR}"/src python "${WORK_DIR}"/evaluate.py --dataset extes --method "${METHOD}" \
   --data_dir "${WORK_DIR}"/data --prompts_dir "${WORK_DIR}"/prompts \
-  --model_name gpt-3.5-turbo-0301 \
-  --model_api_key sk-1 \
-  --model_api_base https://api.nbfaka.com/v1 \
-  --strategy_name gpt-3.5-turbo-0301 \
-  --strategy_api_key sk-1 \
-  --strategy_api_base https://api.nbfaka.com/v1 \
+  --model_name mixtral \
+  --model_api_key "EMPTY" \
+  --model_api_base http://localhost:40001/v1 \
+  --strategy_name mixtral \
+  --strategy_api_key "EMPTY" \
+  --strategy_api_base http://localhost:40002/v1 \
   --evaluator_name gpt-4 \
-  --evaluator_api_key sk-2 \
-  --evaluator_api_base https://kkkc.net/v1
+  --evaluator_api_key  \
+  --evaluator_api_base 

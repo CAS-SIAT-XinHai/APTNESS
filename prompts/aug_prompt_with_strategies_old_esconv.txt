@@ -1,0 +1,11 @@
+Craft an empathetic response for the Listener, reflecting on the Speaker's last comment and the overall dialogue history. Ensure the response is:
+Responsive: Directly acknowledge the Speaker's recent statement or emotion.
+Empathetic: Show compassion and an understanding of the Speaker's emotional state.
+Concise: Offer a succinct and focused reply, avoiding redundancy.
+Response Guidelines:
+Response 1: {response_1} was guided by the strategy {strategy_1}, which is defined as {strategy_explain_1}.
+Response 2: {response_2} was guided by the strategy {strategy_2}, which is defined as {strategy_explain_1}.
+Response 3: {response_3} was guided by the strategy {strategy_3}, which is defined as {strategy_explain_1}.
+Dialogue Context:
+{dialogue}
+Based on the dialogue context, response information, and provided strategies, generate a singular, empathetic, and strategic response for the Listener.

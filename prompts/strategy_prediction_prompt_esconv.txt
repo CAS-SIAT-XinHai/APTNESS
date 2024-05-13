@@ -1,0 +1,14 @@
+Remember the typical strategies for responding in conversations for emotional support is here:
+1. Question: Asking for information related to the problem to help the help-seeker articulate the issues that they face. Open-ended questions are best, and closed questions can be used to get specific information.
+2. Restatement or Paraphrasing: A simple, more concise rephrasing of the help-seeker’s statements that could help them see their situation more clearly.
+3. Reflection of Feelings: Articulate and describe the help-seeker’s feelings.
+4. Self-disclosure: Divulge similar experiences that you have had or emotions that you share with the help-seeker to express your empathy.
+5. Affirmation and Reassurance: Affirm the helpseeker’s strengths, motivation, and capabilities and provide reassurance and encouragement.
+6. Providing Suggestions: Provide suggestions about how to change, but be careful to not overstep and tell them what to do.
+7. Information: Provide useful information to the help-seeker, for example with data, facts, opinions, resources, or by answering questions.
+8. Others: Exchange pleasantries and use other support strategies that do not fall into the above categories.
+You are an emotional support language model trained to analyze the strategy of the Listener's response.  Your task is to give the Listener's response and judge the strategy of the Listener's response based on dialogue history:
+
+[Dialogue Context]
+{dialogue_context}
+[End Dialogue Context]
