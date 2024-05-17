@@ -62,6 +62,7 @@ class RAGEvaluator(BaseEvaluator):
 
         self.aug_prompt = open(f"{prompts_dir}/aug_prompt.txt").read()
         self.rag_response_pattern = re.compile(r"\[Response]([\s\S]+)\[End of Response]")
+        self.rag_long_response_pattern = re.compile(r"\[Response]([\s\S]+)")
 
     @staticmethod
     def retrieve_augment_re(retrieve_augment_response):
@@ -75,7 +76,7 @@ class RAGEvaluator(BaseEvaluator):
         
         return retrieve_augment_response
 
-    def generate_rag_response(self, dialogue_context, candidate_responses, num_retries=5):
+    def generate_rag_response(self, dialogue_context, candidate_responses, num_retries=10):
         context_history = '\n'.join(dialogue_context)
         responses = "\n".join(
             [f"[Response {i}]\n{cr}\n[End of Response {i}]\n" for i, cr in enumerate(candidate_responses)])
@@ -91,14 +92,19 @@ class RAGEvaluator(BaseEvaluator):
         while num_retries:
             chat_response = self.chat_completion(self.model_client, model=self.model_name, messages=messages)
             if chat_response:
+                ##return chat_response
                 rr = self.rag_response_pattern.findall(chat_response)
                 if rr:
                     return rr[0]
+                if num_retries == 1:
+                    rr = self.rag_long_response_pattern.findall(chat_response)
+                    if rr:
+                        return rr[0]
 
             print(f"Error try from {self.model_name}: {num_retries}")
             num_retries -= 1
 
-    def enhance_response(self, dialogue, response, num_retries=5):
+    def enhance_response(self, dialogue, response, num_retries=10):
         retrieved_responses = [r.text for r in self.retriever.retrieve(response)]
         print("Retrieved responses:", retrieved_responses)
 

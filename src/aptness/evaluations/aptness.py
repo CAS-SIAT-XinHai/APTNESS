@@ -34,7 +34,7 @@ class APTNESSEvaluator(RAGEvaluator):
         self.strategy_prediction_prompt = open(f"{prompts_dir}/strategy_prediction_prompt_{strategy}.txt").read()
         self.aug_prompt_with_strategies = open(f"{prompts_dir}/aug_prompt_with_strategies.txt").read()
 
-    def generate_response_strategy(self, dialogue, num_retries=5):
+    def generate_response_strategy(self, dialogue, num_retries=10):
         strategy_generate_prompt = self.strategy_prediction_prompt.format(dialogue_context=dialogue)
         messages = [
             {
@@ -52,14 +52,13 @@ class APTNESSEvaluator(RAGEvaluator):
                 return chat_strategy
             num_retries -= 1
 
-    def generate_rag_response_with_strategies(self, dialogue_context, strategy_retrieve_responses, num_retries=5):
+    def generate_rag_response_with_strategies(self, dialogue_context, strategy_retrieve_responses, num_retries=10):
         context_history = '\n'.join(dialogue_context)
         responses = "\n".join([f"[Response {i}]\n{cr['response']}\n[End of Response {i}]\n" for i, cr in
                                enumerate(strategy_retrieve_responses)])
         strategies = "\n".join(
-            [f"[Strategy {i}]\n{st}: {self.strategies[st]}\n[End of Strategy {i}]\n" for i, st in
+            [f"[Strategy {i}]\n{st}, which is defined as {self.strategies[st]}\n[End of Strategy {i}]\n" for i, st in
              enumerate(set(flatten([cr['strategy'] for cr in strategy_retrieve_responses])))])
-
         messages = [
             {
                 "role": "user",
@@ -72,14 +71,56 @@ class APTNESSEvaluator(RAGEvaluator):
         while num_retries:
             chat_response = self.chat_completion(self.model_client, model=self.model_name, messages=messages)
             if chat_response:
+                ##return chat_response
                 rr = self.rag_response_pattern.findall(chat_response)
                 if rr:
                     return rr[0]
+                if num_retries == 1:
+                    rr = self.rag_long_response_pattern.findall(chat_response)
+                    if rr:
+                        return rr[0]
 
             print(f"Error try from {self.strategy_name}: {num_retries}")
             num_retries -= 1
+    
+    # def generate_rag_response_with_strategies(self, dialogue_context, strategy_retrieve_responses, num_retries=10):
+    #     context_history = '\n'.join(dialogue_context)
+    #     # responses = "\n".join([f"[Response {i}]\n{cr['response']} was guided by the strategy '{cr['strategy'][0]}', which is defined as '{self.strategies[cr['strategy'][0]]}'.\n[End of Response {i}]\n" for i, cr in
+    #     #                        enumerate(strategy_retrieve_responses)])
 
-    def enhance_response(self, dialogue, response, num_retries=5):
+    #     responses = "\n".join([f"Response {i}\n{cr['response']} was guided by the strategy '{', '.join(cr['strategy'])}', which is defined as '{', '.join([self.strategies[st] for st in cr['strategy']])}'.\n" for i, cr in
+    #                            enumerate(strategy_retrieve_responses)])
+
+
+    #     # strategies = "\n".join(
+    #     #     [f"[Strategy {i}]\n{st}: {self.strategies[st]}\n[End of Strategy {i}]\n" for i, st in
+    #     #      enumerate(set(flatten([cr['strategy'] for cr in strategy_retrieve_responses])))])
+    #     # print(self.aug_prompt_with_strategies.format(dialogue=context_history,
+    #     #                                                           responses=responses))
+    #     messages = [
+    #         {
+    #             "role": "user",
+    #             "content": self.aug_prompt_with_strategies.format(dialogue=context_history,
+    #                                                               responses=responses),
+    #         }
+    #     ]
+       
+    #     while num_retries:
+    #         chat_response = self.chat_completion(self.model_client, model=self.model_name, messages=messages)
+    #         if chat_response:
+    #             return chat_response                
+    #             rr = self.rag_response_pattern.findall(chat_response)
+    #             if rr:
+    #                 return rr[0]
+    #             if num_retries == 1:
+    #                 rr = self.rag_long_response_pattern.findall(chat_response)
+    #                 if rr:
+    #                     return rr[0]
+
+    #         print(f"Error try from {self.strategy_name}: {num_retries}")
+    #         num_retries -= 1
+
+    def enhance_response(self, dialogue, response, num_retries=10):
         retrieved_responses = self.retriever.retrieve(response)
         candidate_responses_with_strategies = []
         for d, r in [(dialogue, response)] + [(self.reversed_responses[r.text], r.text) for r in retrieved_responses]:
