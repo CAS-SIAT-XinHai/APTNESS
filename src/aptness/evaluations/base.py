@@ -58,12 +58,15 @@ class BaseEvaluator(object):
             })
             dialogue_context.append("Speaker: {}".format(speaker))
 
-            while num_retries:
+            nr = num_retries
+            while nr:
                 chat_response = self.chat_completion(self.model_client, model=self.model_name, messages=messages)
                 if chat_response:
                     yield dialogue_context.copy(), chat_response
-                    break
-                num_retries -= 1
+                    nr = 0
+                else:
+                    print(f"Error try from {self.model_name}: {nr}")
+                    nr -= 1
 
             messages.append({
                 "role": "assistant",
@@ -103,11 +106,15 @@ class BaseEvaluator(object):
             print("=============================================================")
             conv = item['history'].copy() + [[item['instruction'], item['output']]]
             evaluate_seq_results = Counter()
+            turn_num = 0
             print("---------------------------------------------------------------")
             for turn_num, (msg, rsp) in enumerate(self.complete_conversation(conv)):
                 rsp = self.enhance_response(msg, rsp, num_retries)
                 s = self.score(msg, rsp, num_retries=num_retries)
                 evaluate_seq_results.update({k: v / len(conv) for k, v in s.items()})
                 print("---------------------------------------------------------------")
+
+            if len(conv) != turn_num + 1:
+                print(f"Error for case {item} .")
             self.evaluate_results.update({k: v / len(test_data) for k, v in evaluate_seq_results.items()})
         print(self.evaluate_results)
