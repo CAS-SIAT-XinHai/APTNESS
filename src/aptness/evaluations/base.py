@@ -114,7 +114,8 @@ class BaseEvaluator(object):
                 evaluate_seq_results.update({k: v / len(conv) for k, v in s.items()})
                 print("---------------------------------------------------------------")
 
-            if len(conv) != turn_num + 1:
+            if len(conv) == turn_num + 1:
+                self.evaluate_results.update({k: v / len(test_data) for k, v in evaluate_seq_results.items()})
+            else:
                 print(f"Error for case {item} .")
-            self.evaluate_results.update({k: v / len(test_data) for k, v in evaluate_seq_results.items()})
         print(self.evaluate_results)
