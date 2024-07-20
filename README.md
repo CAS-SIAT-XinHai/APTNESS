@@ -1,12 +1,23 @@
 # APTNESS
 APTNESS: Incorporating Appraisal Theory and Emotion Support Strategies for Empathetic Response Generation
+
+## Usage
+
+### Train
+The library we used for training our model is Llama-factory. (https://github.com/hiyouga/LLaMA-Factory)
+
+### Evaluation
+```
+bash evaluate_example.sh
+```
+
 ## Method
 
 ### APTNESS Framework
 
 The **APTNESS** framework consists of three parts: the generation of a empathetic response database with empathetic response appraisal theory, the retrieval augmentation module, and the integration of emotional support strategies module.
 
-![model](Fig/model.pdf)
+![model](Fig/model.png)
 
 
 ### The APT Database
@@ -55,4 +66,7 @@ Finally, we average all dialogues' scores as the final score $SC$, the equations
 
 If you find our work helpful in your research, please cite the following paper:
 
+## Acknowledgement
+
+This repo benefits from [Llama-factory](https://github.com/hiyouga/LLaMA-Factory).
 
