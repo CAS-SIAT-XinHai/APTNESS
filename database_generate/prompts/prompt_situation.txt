@@ -1,0 +1,36 @@
+This is an empathetic dialogue task: A Speaker tells his story in a conversation with a second worker (Listener). Listener should recognize and acknowledge others' feelings in a conversation as much as possible. 
+Please generate the empathetic dialogue's situations according to the the emotion, and the factor that affect emotions. You would be provided some examples:
+[Begain example 1]
+Emotion: Anger
+Factor: Blaming, Slandering, and Tattling
+Situation1: When your older brother has taken money from Mom's purse and you are blamed because you're the youngest one. They accuse you though you didn't take it.
+Situation2: If your mother blames you for breaking a vase that you have not done.
+Situation3: When your mom has lost some money, she always puts the blame on you and thinks you took it. She always thinks you are the one to blame.
+Situation4: When you're tired and have slept too little, and everybody just keeps nagging at you at home, you get put out and would rather have peace and quiet.
+Situation5: When your parents take their bad morning mood out on you, even though it's none of your business, you think that people who are in a bad temper don't necessarily have to let it come out on other people if it isn't necessary.
+Situation6: When you and your mom are quarreling about the dirty dishes in the sink, and she becomes overly fixated on the smallest details, like a misplaced spoon or a slightly greasy plate, you quickly lose your patience.
+Situation7: When your sibling yells and shouts at you for a small spill, insisting on repeatedly nagging about it, you believe that it's enough to say something once, and then you grasp it.
+Situation8: You get angry when people talk behind your back, or your friend's back. Because those who do so are so mean and such cowards that they don't dare to tell you or your friend directly.
+Situation9: You get mad when your friends talk rubbish about you and you find out about it. You get terribly mad because when your friends say nasty things, you feel out of it.
+Situation10: When you're kind to a friend and he is not. You want to be treated yourself the way you treat your friends.
+Situation11: When friends fall out and one of them, out of revenge, is spreading false rumors. They cannot have it out with each other instead. It is not nice to have to deal with rumors.
+[End example 1]
+[Begain example 2]
+Emotion: Frustration
+Factor: Rejection and Interpersonal Issues
+Situation1: You are in love with someone but he/she is more interested in someone else.
+Situation2: You arrange with your roommates that each in turn has to put out the garbage. When it someone else's turn, you noticed that he/she didn't clean up.
+Situation3: You hear that a friend is spreading gossip about you.
+Situation4: You are fired from your holiday job.
+Situation5: You have a group assignment with some fellow students. They don't work hard, and you all get a bad grade.
+[End example 2]
+[Begain example 3]
+Emotion: Depression
+Factor: Failure of Important Goals
+Situation1: You put in countless hours of preparation, pouring your heart and soul into pursuing your dream. The moment of truth arrives, and as you anxiously wait for the outcome, the news hits you like a tidal wave your expectations shattered, your vision crumbling.
+Situation2: As you watch the confident smiles of your peers, you slowly realize that your name is not among the list of successful candidates for the dream job you've been striving for. Your heart sinks with each congratulatory message they receive, as you're left alone to face the overwhelming weight of unfulfilled expectations, your aspirations slipping further from your grasp.
+Situation3: As you pour countless hours of effort into achieving your long-awaited dream, the moment of truth arrives. With trembling anticipation, you eagerly await the results, hoping for success. However, as the news reaches your ears, a profound silence engulfs your heart, and the weight of disappointment crushes your spirit, leaving you questioning your worth and capabilities.
+Situation4: You stand in the dimly lit room, surrounded by crumpled papers and discarded dreams. The weight of missed opportunities and shattered ambitions presses upon your chest, suffocating the flickering flame of hope within. A haunting silence lingers, echoing the whispers of doubt that seep into your weary soul, leaving you trapped in a suffocating cocoon of unfulfilled potential.
+Situation5: As you scroll through social media, you see your peers celebrating their achievements, showcasing their success in the very area where you fell short. Doubts creep in, whispering that you're not good enough, fueling the sinking feeling in your chest. Each passing day, the weight of your unmet goal grows heavier, casting a shadow on your dreams and leaving you questioning your worth.
+[End of example 3]
+Now imagine you are in the emotion '{emotion}', and the factor that affect emotions '{factor}'. You should generate as more as you can. 

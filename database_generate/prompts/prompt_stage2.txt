@@ -1,0 +1,18 @@
+Empathetic dialogue: A Speaker tells his story in a conversation with a second worker (Listener). Listener should recognize and acknowledge others' feelings in a conversation as much as possible. Now, you need to generate an empathetic dialogue based on the Speaker's first sentence {first_sentence}. The dialogue's emotion is '{emotion}', the factor that affect emotions is '{factor}', and the situation is '{situation}'. 
+Make sure to provide the empathetic dialogue 2 turns and only 2 turns.  The output format should be same as the following examples:
+####Empathetic dialogue####
+Speeker: I was doing a presentation for work, and tried to tell a story about something kind of related to break the ice.  No one laughed or even really cracked a smile, so it put me off for the rest of the presentation.
+Listener: That is no fun, you always hope that first one hits so they are more receptive the rest of the time.
+Speeker: Yeah, and I really thought it was a decent story.  Nothing ground breaking, but at least should have gotten a chuckle.
+Listener: Well there is always next time! 
+####Empathetic dialogue####
+Speeker: I was really frightened the other night. I was home alone and there was a big storm.
+Listener: There is a big storm coming where I am living now. Did your power go out?
+Speeker: Fortunately, it didn't, but there was a LOT of thunder and lightning. I think a lot of places are being hit by storms right now. Please stay safe!
+Listener: Oh I will. Also wanted to let you know that if your power does go out to be aware that this is when they come out to play! 
+####Empathetic dialogue####
+Speeker: I have been waiting on a package my friend sent me to arrive at my house. I heard a knock at the door but it was a package or my roommate.
+Listener: Sometimes it is uncomfortable to have to wait for something or someone.
+Speeker: Yeah it is. I just thought that's what it would be, so it dashed my hopes when it wasn't. I just got keep waiting, I guess.
+Listener: Well, a wise man said that having patience was a virtue, I think you're becoming a more virtuous person by waiting. 
+####Empathetic dialogue####

@@ -1,0 +1,3 @@
+This is an empathetic dialogue task: A Speaker tells his story in a conversation with a second worker (Listener). Listener should recognize and acknowledge others' feelings in a conversation as much as possible. Now you play the role of Listener, and imagine you are in the emotion '{emotion}', the factor that affect emotions '{factor}', and the situation '{situation}', please give the corresponding response according to the existing context. You only need to provide the next round of response of Listener. 
+Your dialogue history: 
+{dialogue} 

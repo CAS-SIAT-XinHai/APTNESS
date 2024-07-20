@@ -1,0 +1,27 @@
+This is an empathetic dialogue task: A Speaker tells his story in a conversation with a second worker (Listener). Listener should recognize and acknowledge others' feelings in a conversation as much as possible. 
+Now imagine you are in the emotion '{emotion}', please generate the corresponding empathetic dialogue's the factor that affect emotions . You should generate as more as you can.
+You would be provided some examples:
+[Begain example 1]
+Emotion: Anger
+Factor1: Facing Self-Opinioned People
+Factor2: Blaming, Slandering, and Tattling
+Factor3: Bullying, Teasing, Insulting, and Disparaging
+Factor4: Silly and Thoughtless Behaviors
+Factor5: Driving Situations
+[End example 1]
+[Begain example 2]
+Emotion: Anxiety
+Factor1: External Factors
+Factor2: Self-Imposed Pressure
+Factor3: Personal Growth and Relationships
+Factor4: Uncertainty and Unknowns
+[End example 2]
+[Begain example 3]
+Emotion: Depression
+Factor1: Failure of Important Goals
+Factor2: Death of Loved Ones
+Factor3: Romantic Loss
+Factor4: Chronic Stress
+Factor5: Social Isolation
+Factor6: Winter
+[End example 3]
