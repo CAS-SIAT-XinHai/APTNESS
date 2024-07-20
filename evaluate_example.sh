@@ -24,7 +24,7 @@ if [ -z "$STRATEGY" ]; then
   PYTHONPATH="${WORK_DIR}"/src python "${WORK_DIR}"/evaluate.py \
     --dataset "${DATASET}" --method "${METHOD}" \
     --data_dir "${WORK_DIR}"/data --prompts_dir "${WORK_DIR}"/prompts \
-    --model_name mixtral \
+    --model_name llama2 \
     --model_api_key "EMPTY" \
     --model_api_base http://localhost:40001/v1 \
     --evaluator_name gpt-4 \
@@ -34,10 +34,10 @@ else
   PYTHONPATH="${WORK_DIR}"/src python "${WORK_DIR}"/evaluate.py \
     --dataset "${DATASET}" --method "${METHOD}" --strategy "${STRATEGY}" \
     --data_dir "${WORK_DIR}"/data --prompts_dir "${WORK_DIR}"/prompts \
-    --model_name mixtral \
+    --model_name llama2 \
     --model_api_key "EMPTY" \
     --model_api_base http://localhost:40001/v1 \
-    --strategy_name mixtral \
+    --strategy_name llama2 \
     --strategy_api_key "EMPTY" \
     --strategy_api_base http://localhost:40002/v1 \
     --evaluator_name gpt-4 \
