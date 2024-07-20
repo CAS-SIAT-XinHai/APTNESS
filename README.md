@@ -43,9 +43,11 @@ Fine-tune the LoRA module integrated with emotional support strategies to introd
 #### Evaluation Metrics
 
 * The main evaluation metric
+  
 Empathy: Assess how well the response understands and appropriately expresses recognition of the Speaker's feelings and experiences.
 
 * Submetrics
+  
 Coherence: Evaluate the relevance and logical connection of the response to the dialogue context.
 Informativity: Determine the richness and value of the information provided in the response.
 Identification: Rate the depth at which the response delves into the Speaker's situation and effectively identifies their problems.
