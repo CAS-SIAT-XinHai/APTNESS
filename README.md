@@ -4,7 +4,7 @@ APTNESS: Incorporating Appraisal Theory and Emotion Support Strategies for Empat
 ## Usage
 
 ### Train
-The library we used for training our model is Llama-factory. (https://github.com/hiyouga/LLaMA-Factory)
+The library we used for training is Llama-factory (https://github.com/hiyouga/LLaMA-Factory).
 
 ### Evaluation
 ```
