@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/8c93135a-f18a-404b-8986-cfdb7f35eca3)# APTNESS
+# APTNESS
 APTNESS: Incorporating Appraisal Theory and Emotion Support Strategies for Empathetic Response Generation
 ## Method
 
