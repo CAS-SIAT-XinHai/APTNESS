@@ -3,6 +3,14 @@ APTNESS: Incorporating Appraisal Theory and Emotion Support Strategies for Empat
 
 ## Usage
 
+### Database Generation
+The code for database generation can be found in the "database" folder. The entire process follows this sequence:
+* generate_factor
+* generate_situation
+* stage1_generate
+* stage2_generate
+* stage3_generate
+
 ### Train
 The library we used for training is Llama-factory (https://github.com/hiyouga/LLaMA-Factory).
 
